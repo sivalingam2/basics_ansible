@@ -1,5 +1,8 @@
 - name: install nginx
-  ansible.builtin.yum:
-    name: nginx
-    state: installed
+  hosts: web
+  tasks:
+    - name: install nginx
+      ansible.builtin.yum:
+        name: nginx
+        state: installed
 
