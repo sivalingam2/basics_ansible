@@ -1,4 +1,4 @@
 - name: nginx
-  hosts: web
+  hosts: app
   roles:
     - frontend
