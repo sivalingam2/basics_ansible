@@ -1,0 +1,6 @@
+- name: nodejs setup
+  tasks:
+    - name: install nginx
+      ansible.builtin.yum:
+        name: nginx
+        state: installed
