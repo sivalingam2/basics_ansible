@@ -1,9 +1,5 @@
-- name: nodejs setup
-  hosts: web
-  become: true
-  tasks:
-    - name: install nginx
-      ansible.builtin.yum:
-        name: nginx
-        state: installed
+- name: install nginx
+  ansible.builtin.yum:
+    name: nginx
+    state: installed
 
