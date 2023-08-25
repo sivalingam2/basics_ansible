@@ -1,8 +1,5 @@
 - name: name of the nginx
   hosts: web
   become: true
-  tasks:
-    - name: install nginx
-      ansible.builtin.yum:
-        name: nginx
-        state: latest
+  roles:
+    - frontend
