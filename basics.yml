@@ -1,5 +1,5 @@
 - name: nginx
-  hosts: app
+  hosts: web
   become: true
   roles:
     - frontend
